@@ -2,6 +2,8 @@
 
 This repository contains the HTML and CSS code for a survey form that gathers information about Artificial Intelligence (AI) usage and tool adoption. Users can answer questions about their frequency of AI use, their opinions on AI replacing jobs, the AI tools they've used, and share their experiences. 
 
+<a href="https://ai-survey-form.austinokujr.com/" target="_blank" rel="noopener noreferrer">Visit website</a>
+
 ## Features
 
 * User-friendly interface with clear instructions.
