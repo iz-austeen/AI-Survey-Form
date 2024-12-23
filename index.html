@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Usage and Tool Adoption Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/artificial-intelligence.svg" alt="artificial intelligence logo" width="68px">
+            <h6 id="intro">AI Usage and Tool Adoption</h6>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This survey aims to understand current trends in AI usage and the tools being utilized. Please take your time to carefully consider each question and provide accurate responses. Your thoughtful participation will greatly contribute to our research.</p>
+        </header>
+        <form action="" id="survey-form">
+            <fieldset>
+                <!-- input for name, email and age -->
+                <label for="name" id="name-label">Name<br><input type="text" id="name" name="name" placeholder="What is your name?" required></label><br>
+                <label for="email" id="email-label">Email<br><input type="email" id="email" name="email" placeholder="Enter a valid email" required></label><br>
+                <label for="number" id="number-label">Age<br><input type="number" id="number" name="number" placeholder="How old are you?" min="13" max="80" maxlength="2"></label><br>
+                <!-- dropdown for how you heard about us -->
+                <label for="dropdown">How frequently do you make use of AI?
+                    <select name="dropdown" id="dropdown">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">Never</option>
+                        <option value="2">1-3 times a week</option>
+                        <option value="3">4-6 times a week</option>
+                        <option value="4">Once a day</option>
+                        <option value="5">Multiple times a day</option>
+                        <option value="6">Prefer not to say</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Do you agree that AI would render us jobless?</legend>
+                <!-- radio button -->
+                <label for="jobless-1"><input type="radio" name="jobless" id="jobless-1" value="1" checked> Strongly disagree</label>
+                <label for="jobless-2"><input type="radio" name="jobless" id="jobless-2" value="2"> Disagree</label>
+                <label for="jobless-3"><input type="radio" name="jobless" id="jobless-3" value="3"> Neutral</label>
+                <label for="jobless-4"><input type="radio" name="jobless" id="jobless-4" value="4"> Agree</label>
+                <label for="jobless-5"><input type="radio" name="jobless" id="jobless-5" value="5"> Strongly agree</label>
+            </fieldset>
+            <fieldset>
+                <legend>AI tool(s) you have used<br><span>(You can select more than one)</span></legend>
+                <!-- checkboxes for frequently used ai -->
+                <label for="chatgpt"><input type="checkbox" id="chatgpt" name="ai-tool" value="chatgpt"> ChatGPT</label>
+                <label for="google-gemini"><input type="checkbox" id="google-gemini" name="ai-tool" value="google-gemini"> Google Gemini</label>
+                <label for="amazon-alexa"><input type="checkbox" id="amazon-alexa" name="ai-tool" value="amazon-alexa"> Amazon Alexa</label>
+                <label for="elsa-speak"><input type="checkbox" id="elsa-speak" name="ai-tool" value="elsa-speak"> ELSA Speak</label>
+                <label for="starryai"><input type="checkbox" id="starryai" name="ai-tool" value="starryai"> StarryAI</label>
+                <label for="meta-llama-3"><input type="checkbox" id="meta-llama-3" name="ai-tool" value="meta-llama-3"> Meta Llama 3</label>
+                <label for="snapchat"><input type="checkbox" id="snapchat" name="ai-tool" value="snapchat"> Snapchat</label>
+            </fieldset>
+            <fieldset>
+                <!-- textarea to share experience -->
+                <label for="experience">Experience with AI tools
+                    <textarea name="experience" id="experience" rows="3" cols="30" placeholder="Share your experience with AI tools so far..."></textarea>
+                </label>
+            </fieldset>
+            <!-- submit button -->
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
